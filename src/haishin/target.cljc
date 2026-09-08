@@ -18,7 +18,7 @@
   That split is why the endpoint ids below are named after the vendor operation
   (`:youtube/videos-insert`) rather than a URL: the sender knows the URL, we
   only have to agree on which operation we mean."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [haishin.artifact :as artifact]
             [haishin.constraints :as constraints]))
 

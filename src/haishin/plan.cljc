@@ -10,7 +10,7 @@
   on the first bad target. A 4-minute vertical video is a valid YouTube upload
   and an invalid X post, and the right answer is to publish it to YouTube and
   report why X was skipped — not to publish nothing."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [haishin.artifact :as artifact]
             [haishin.constraints :as constraints]
             [haishin.target :as target]))
