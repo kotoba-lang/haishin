@@ -19,7 +19,7 @@
   When a plan is `:approval-required`, the grant is empty and every target
   yields a `:skipped` receipt — the human approval boundary is preserved by
   construction rather than by remembering to check a flag."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [haishin.artifact :as artifact]))
 
 (def ^:private tamaki-kind->artifact-kind

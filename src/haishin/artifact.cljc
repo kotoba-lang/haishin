@@ -7,7 +7,7 @@
   see platform-specific keys — that is the whole point of the boundary.
 
   Pure: nothing here performs I/O or reads ambient state."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 (def kinds
   "What an artifact fundamentally *is*. A target declares which kinds it
@@ -33,7 +33,7 @@
 
 (defn- normalize-media
   [m]
-  (let [mime (some-> (:media/mime m) str str/lower-case str/trim)]
+  (let [mime (some-> (:media/mime m) str str/lower str/trim)]
     (cond-> m
       mime (assoc :media/mime mime))))
 

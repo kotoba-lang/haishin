@@ -26,7 +26,7 @@
   library deliberately does not refuse to plan on unverified limits: planning is
   free and offline, and a wrong limit surfaces as a rejection you can read,
   which is more useful than a library that will not run."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 (def ^:private mp4 #{"video/mp4" "video/quicktime"})
 (def ^:private jpeg-png #{"image/jpeg" "image/png"})
