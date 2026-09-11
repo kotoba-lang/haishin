@@ -164,8 +164,8 @@ where platform detail lives.
 ## Test
 
 ```bash
-nbb run_tests.cljk     # primary path
-clojure -M:test        # JVM, secondary
+kbb --backend sci run_tests.cljk     # primary path
+kbb -M:test        # JVM, secondary
 ```
 
 20 tests / 82 assertions, green on both runtimes.
