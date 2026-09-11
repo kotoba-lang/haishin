@@ -164,7 +164,7 @@ where platform detail lives.
 ## Test
 
 ```bash
-nbb run_tests.cljs     # primary path
+nbb run_tests.cljk     # primary path
 clojure -M:test        # JVM, secondary
 ```
 
